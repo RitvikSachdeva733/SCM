@@ -83,5 +83,9 @@ int main() {
       else 
         printf("Please enter the correct choice. \n");
    }
+   else 
+   {
+   		printf("Exit the convertor...");
+   }
   return 0;
 }
