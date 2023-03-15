@@ -8,7 +8,7 @@ int main() {
   float USDtoEURO,USDtoJPY,USDtoRMB,ounceToPounds,gramsToPounds; 
   printf("Welcome to Unit Converter! \n");
   printf("Here is a list of conversation to choose from: \n");
-  printf("Temperature(T),Currency(C),Mass(M) \n");
+  printf("Temperature(T),Currency(C),Mass(M),Exit(E) \n");
   printf("Please enter the letter you want to convert.\n");
   scanf("%c",&category);
 
@@ -61,8 +61,8 @@ int main() {
       }
       else
         printf("Please enter correct choice. \n");
-   }
-  else if(category == 'M'){
+    }
+    else if(category == 'M'){
       printf("Welcome to Mass Converter! \n");
       printf("Here is a list of conversations to choose from: \n");
       printf("Enter 1 for ounces to pounds. \n");
@@ -82,6 +82,14 @@ int main() {
       }
       else 
         printf("Please enter the correct choice. \n");
+   }
+   else if(category=='E')
+   {
+   		printf("Exit the convertor...");
+   }
+   else
+   {
+   		printf("Invalid Input...Try Again...");
    }
   return 0;
 }
